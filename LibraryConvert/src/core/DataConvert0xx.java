@@ -67,9 +67,9 @@ public class DataConvert0xx extends ControlPanel{
     //finish
     private String setSignal084(String n){
     	
-		String iSBN = n.split("$a")[1].split("$b")[0];
-		String packages = n.split("$b")[1].split("$d")[0];
-		String money = n.split("$d")[1].split("$")[1];
+		String iSBN = n.split("\\$a")[1].split("\\$")[0];
+		String packages = n.split("\\$b")[1].split("\\$")[0];
+		String money = n.split("\\$d")[1].split("\\$")[0];
 		String output = "020    |a"+iSBN+"|q"+packages+" :|cNT$"+money;
 		return output;
 	}
