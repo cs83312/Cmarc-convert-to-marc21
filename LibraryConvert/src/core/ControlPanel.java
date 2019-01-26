@@ -1,12 +1,14 @@
 package core;
 
-public abstract class ControlPanel {
+import java.util.List;
+
+public abstract  class ControlPanel {
 
 	
-	String number;
 	
-	public abstract void putInput();
-	public abstract String getOutPut();
+	
+	public abstract void putInput(String n);
+	public abstract List<String> getOutPut();
 	
 	
 }
